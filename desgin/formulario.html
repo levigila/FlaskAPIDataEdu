@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 1410;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <form method="post" action="requisition.py" >
+  <input type="submit" value="Enviar">
+        <h2>Formulário de Análise</h2>
+
+            Escolaridade Mãe: <select name="Escolaridade_Mãe" required>
+                <option value="1">Escola Primária</option>
+                <option value="2">Escola Secundária</option>
+                <option value="3">Ensino Médio</option>
+                <option value="4">Universidade</option>
+                <option value="5">MSC</option>
+                <option value="6">PHD</option>
+                        </select><br>
+           
+            Quantidade de Irmãos: <select name="Quant_Irmãos" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 ou mais</option>
+                        </select><br>
+        
+            Ocupação Pai: <select name="Ocupação_Pai" required>
+                <option value="1">aposentado</option>
+                <option value="2">oficial do governo</option>
+                <option value="3">empregado do setor privado</option>
+                <option value="4">trabalho autônomo</option>
+                <option value="5">outros</option>
+                        </select><br>
+            Horas de Estudo Semanal: <select name="Horas_Estudo_Semanal" required>
+                <option value="1">nenhum</option>
+                <option value="2">Menos de 5 Horas</option>
+                <option value="3">De 6 a 10 Horas</option>
+                <option value="4">De 11 a 20 Horas</option>
+                <option value="5">Mais de 20 Horas</option>
+                        </select><br>
+           
+            Anotações Aulas: <select name="Anotações_Aulas" required>
+                <option value="1">Nunca</option>
+                <option value="2">ás vezes</option>
+                <option value="3">Sempre</option>
+
+                        <input id="next" type="submit" value="Prosseguir">
+
+    </form>
+
+    
+
+</body>
+</html>
